@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'REM';
+    src: url('REM-VariableFont_wght.ttf') format('ttf'), /* Replace 'rem-font.woff2' with your font file */
+         url('REM-Italic-VariableFont_wght.ttf') format('ttf'); /* Provide different font formats for compatibility */
+    /* Add more src lines for other font formats if available */
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'REM', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('landscape.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional - keeps the background fixed while scrolling */
+    color: #fff; /* Set default text color to white */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px; /* Add padding to separate content from the top */
+}
+
+header {
+    background-color: rgba(4, 28, 22, 1); /* Background color for header with transparency */
+    padding: 20px 0;
+    position: relative; /* Position the logo relative to the header */
+}
+
+.logo {
+    max-width: 50px;
+    max-height: 50px;
+    position: absolute; /* Position the logo absolutely */
+    top: 50%; /* Move the logo 50% down from the top of the header */
+    left: 50%; /* Move the logo 50% from the left of the header */
+    transform: translate(-50%, -50%); /* Center the logo perfectly */
+}
+
+.intro {
+    margin-top: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Background color for the intro section with transparency */
+    padding: 20px;
+    border-radius: 10px; /* Add rounded corners for the section */
+    
+}
+
+.intro h1,
+.intro p {
+    color: #fff; /* Set text color to white */
+}
+.intro a {
+    color: #fff; /* Set anchor text color to white */
+    text-decoration: none; /* Remove underline */
+}
+
+.intro a:hover {
+    text-decoration: underline; /* Add underline on hover if desired */
+}
